@@ -1,0 +1,116 @@
+@import "tailwindcss";
+:root {
+  --HoverColor: #b2bbff;
+}
+body {
+  background-attachment: fixed;
+  background: linear-gradient(
+    180deg,
+    #1a1f26 7%,
+    #181c23 36%,
+    #14171f 71%,
+    #000 100%
+  );
+  color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.myLink {
+  text-decoration: none;
+}
+.footer {
+  background: linear-gradient(180deg, transparent, #000);
+}
+
+.myNavBar {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.9), transparent);
+}
+.newIconColor {
+  color: #b2bbff;
+}
+.temp {
+  min-height: 500px;
+}
+.navLinkItem:hover {
+  color: #b2bbff !important;
+}
+.myIcon {
+  width: 70px;
+  height: 70px;
+}
+.footer .content {
+  margin-top: 8px;
+  max-width: 630px;
+  min-width: 300px;
+  text-wrap: wrap;
+}
+.footer .title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-top: 36px;
+}
+.home {
+  background-image: url(./assets/images/sparkle-bg.png);
+}
+a {
+  font-family: inter;
+  font-size: 15px;
+  line-height: 25px;
+}
+.slick-active .card {
+  opacity: 1 !important;
+  background-color: transparent;
+  border: none;
+}
+.slick-slide img {
+  max-height: 500px;
+}
+.slick-slide div {
+  height: 100% !important ;
+  display: block;
+}
+
+.slick-dots li button::before {
+  color: #b2bbff;
+  border-radius: 50%;
+  background-color: #b2bbff;
+  height: 15px;
+  width: 15px;
+}
+.slick-dots li button::before :hover {
+  color: blue;
+}
+.slick-dots li.slick-active button::before {
+  background-color: #b2bbff;
+  color: #b2bbff;
+  opacity: 1;
+  filter: drop-shadow(0 0 7.452px #b2bbff);
+  height: 16px;
+  width: 16px;
+}
+
+.imageOverLay .dwnBtn {
+  color: yellow;
+}
+.scaleUp {
+  transition: all 0.2s ease-out;
+}
+.scaleUp:hover {
+  transform: scale(1.05);
+}
+
+.gameIcon {
+  border-radius: 4px;
+  box-shadow: 0 1px 7px #0000001a, 0 4px 5px -1px #0000001f,
+    0 10px 15px -5px #0003;
+
+  height: 120px;
+  width: 300px;
+}
+.gameIcon:hover {
+  border-radius: 4px;
+  outline: solid 1px #f2f4ff;
+  outline-offset: -1.5px;
+  transform: scale(1.05);
+  transition: transform 0.2s;
+}
