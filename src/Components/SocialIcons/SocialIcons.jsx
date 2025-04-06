@@ -6,7 +6,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { Link } from 'react-router-dom';
 export default function SocialIcons({myColor}) {
   return (
-    <ul className='d-flex gap-2'>
+    <ul className='d-flex gap-3 p-0 justify-content-center'>
         <Link className={myColor} ><FacebookIcon/></Link>
         <Link className={myColor} ><InstagramIcon/></Link>
         <Link className={myColor} ><XIcon/></Link>

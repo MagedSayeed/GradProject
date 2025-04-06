@@ -26,6 +26,9 @@ export default function Carousel() {
     { image: skrew, alt: "Skrew Game",overLayImage:img2 },
     { image: dominos1, alt: "Skrew Game",overLayImage:img2 },
     { image: skrew2, alt: "Skrew Game",overLayImage:img2 },
+    { image: skrew, alt: "Skrew Game",overLayImage:img2 },
+    { image: dominos1, alt: "Skrew Game",overLayImage:img2 },
+    { image: skrew2, alt: "Skrew Game",overLayImage:img2 },
   ];
   return (
     <>

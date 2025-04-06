@@ -26,6 +26,7 @@ export default function IntroSection() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
+      offset:300,
       
     });
   }, []);
