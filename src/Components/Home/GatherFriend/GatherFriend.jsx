@@ -14,7 +14,7 @@ export default function GatherFriend() {
   }, []);
   return (
     <>
-      <div className="GatherSection">
+      <div className="GatherSection overflow-hidden">
         <div className="container py-5 ">
           <div className="row align-items-center justify-content-center">
             <div className="col-md-4 mb-3">
@@ -44,7 +44,7 @@ export default function GatherFriend() {
                 </div>
               </div>
             </div>
-            <div className=" col-md-7">
+            <div className=" col-md-7 ">
               <div className="row">
                 <div className="col-5 ">
                   <img src={greenChar} alt="friends" />
