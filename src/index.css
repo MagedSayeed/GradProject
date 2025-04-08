@@ -41,7 +41,6 @@ body {
 .footer .content {
   margin-top: 8px;
   max-width: 630px;
-  min-width: 300px;
   text-wrap: wrap;
 }
 .footer .title {

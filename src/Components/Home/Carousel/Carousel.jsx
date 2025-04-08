@@ -8,6 +8,8 @@ import skrew2 from "../../../assets/images/Skrew3.jpg";
 import dominos1 from "../../../assets/images/dominos1.jpg";
 import ImageOverLay from "../../ImageOverLay/ImageOverLay";
 import img2 from "../../../assets/survey-wordmark.png";
+import { Padding } from "@mui/icons-material";
+import { maxHeight } from "@mui/system";
 export default function Carousel() {
   const settings = {
     dots: true,
@@ -16,19 +18,27 @@ export default function Carousel() {
     infinite: false,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerPadding: "60px",
+    centerPadding: "50px",
     slidesToShow: 1,
     speed: 500,
     arrows: false,
+    responsive: [
+      {
+        breakpoint: 600,
+        settings: {
+          centerPadding: "0px",
+        },
+      },
+    ],
   };
 
   const images = [
-    { image: skrew, alt: "Skrew Game",overLayImage:img2 },
-    { image: dominos1, alt: "Skrew Game",overLayImage:img2 },
-    { image: skrew2, alt: "Skrew Game",overLayImage:img2 },
-    { image: skrew, alt: "Skrew Game",overLayImage:img2 },
-    { image: dominos1, alt: "Skrew Game",overLayImage:img2 },
-    { image: skrew2, alt: "Skrew Game",overLayImage:img2 },
+    { image: skrew, alt: "Skrew Game", overLayImage: img2 },
+    { image: dominos1, alt: "Skrew Game", overLayImage: img2 },
+    { image: skrew2, alt: "Skrew Game", overLayImage: img2 },
+    { image: skrew, alt: "Skrew Game", overLayImage: img2 },
+    { image: dominos1, alt: "Skrew Game", overLayImage: img2 },
+    { image: skrew2, alt: "Skrew Game", overLayImage: img2 },
   ];
   return (
     <>
@@ -46,8 +56,7 @@ export default function Carousel() {
                     src={singleImages.image}
                     alt={singleImages.alt}
                   />
-                  <ImageOverLay overLayImage={singleImages.overLayImage}/>
-                  
+                  <ImageOverLay overLayImage={singleImages.overLayImage} />
                 </div>
               </div>
             );

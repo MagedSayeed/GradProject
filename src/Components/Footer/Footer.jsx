@@ -18,7 +18,7 @@ export default function Footer() {
                   inbox.
                 </p>
               </div>
-              <div className="emailInput d-flex justify-content-between mb-2">
+              <div className="mb-2">
               <InputSubscription/>
               </div>
             </div>

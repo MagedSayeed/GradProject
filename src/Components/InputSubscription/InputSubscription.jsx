@@ -41,7 +41,8 @@ export default function InputSubscription({buttonPlace}) {
   };
 
   return (
-    <form onSubmit={handleSubmit} id="demo">
+    
+    <form onSubmit={handleSubmit} id="demo" >
       <FormControl>
         <FormLabel
           sx={(theme) => ({
@@ -55,6 +56,7 @@ export default function InputSubscription({buttonPlace}) {
             overflow: "hidden",
             color: !buttonPlace?"#b8c0cc":"white",
             border: "none",
+            maxWidth:'400px',
             
             borderBottom: !buttonPlace?"2px solid #8c99fe":"2px solid white",
             borderRadius: "4px 4px 0 0",

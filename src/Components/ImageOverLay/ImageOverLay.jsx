@@ -4,7 +4,7 @@ import Button from "@mui/joy/Button";
 export default function ImageOverLay({ overLayImage }) {
   return (
     <>
-      <div className="imageOverLay position-absolute start-10 top-0 bottom-0">
+      <div className="imageOverLay position-absolute d-none d-md-block start-10 top-0 bottom-0">
         <div className=" d-flex flex-column  justify-content-center">
           <img src={overLayImage} alt="" className="h-30 scaleUp" />
           <h2 className="text-white mx-auto fst-italic">Available now!</h2>
