@@ -7,7 +7,7 @@ import FAQ from './FAQ/FAQ';
 export default function Home() {
   return (
     <>
-      <div className="home">
+      <div className="mainBg">
           <Carousel />
           <IntroSection/>
           <FAQ/>

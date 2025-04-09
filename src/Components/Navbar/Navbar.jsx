@@ -48,7 +48,7 @@ export default function Navbar() {
               </DisclosureButton>
             </div>
             <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
-              <Link className="flex shrink-0 items-center" to="home">
+              <Link className="flex shrink-0 items-center" to="/">
                 <img alt="GameZone" src={logo} className="h-12" />
               </Link>
               <div className="hidden md:ml-6 md:block">
@@ -56,11 +56,11 @@ export default function Navbar() {
                   {navigation.map((item) => (
                     <NavLink
                       key={item.name}
-                      href={item.href}
+                      to={'/'+item.to}
                       aria-current={item.current ? "page" : undefined}
                       className={classNames(
                         item.current
-                          ? " myColor "
+                          ? " myColor"
                           : "navLinkItem text-gray-300 text-white ",
                         "rounded-md px-3 py-3 text-sm font-medium text-decoration-none  "
                       )}
@@ -113,10 +113,10 @@ export default function Navbar() {
         <DisclosurePanel className="md:hidden">
           <div className="space-y-1 px-2 pt-2 pb-3">
             {navigation.map((item) => (
-              <DisclosureButton
+              <Link
                 key={item.name}
                 as="a"
-                href={item.href}
+                to={'/'+item.to}
                 aria-current={item.current ? "page" : undefined}
                 className={classNames(
                   item.current
@@ -126,7 +126,7 @@ export default function Navbar() {
                 )}
               >
                 {item.name}
-              </DisclosureButton>
+              </Link>
             ))}
           </div>
         </DisclosurePanel>

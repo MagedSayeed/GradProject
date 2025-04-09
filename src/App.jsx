@@ -1,9 +1,12 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Home from "./Components/Home/Home";
-import About from "./Components/HowToPlay/HowToPlay";
+import HowToPlay from "./Components/HowToPlay/HowToPlay";
 import Layout from "./Components/Layout/Layout";
 import Error from "./Components/Error/Error";
 import Toaster from "./Components/Toaster/Toaster";
+import Support from './Components/Support/Support';
+import Download from './Components/Download/Download';
+import Games from './Components/Games/Games';
 
 const router = createBrowserRouter([
   {
@@ -12,7 +15,10 @@ const router = createBrowserRouter([
     children: [
       {path:'', element: <Home /> },
       {path: "home", element: <Home /> },
-      {path: "about", element: <About /> },
+      {path: "howtoplay", element: <HowToPlay/> },
+      {path: "support", element: <Support/> },
+      {path: "download", element: <Download/> },
+      {path: "games", element: <Games/> },
       {path:'*',element:<Error/>},
     ],
   },

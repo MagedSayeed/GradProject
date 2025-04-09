@@ -5,13 +5,12 @@ import SingleGameIcon from "./SingleGameIcon/SingleGameIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
-import skrew from "../../../assets/gamesLogo/skrew.png"
-import oldmaid from "../../../assets/gamesLogo/oldmaid.png"
-import doubt from "../../../assets/gamesLogo/doubt.png"
-import domino from "../../../assets/gamesLogo/domino.jpg"
-import chess from "../../../assets/gamesLogo/chess.jpg"
-import checkers from "../../../assets/gamesLogo/checkers.png"
-
+import skrew from "../../../assets/gamesLogo/skrew.png";
+import oldmaid from "../../../assets/gamesLogo/oldmaid.png";
+import doubt from "../../../assets/gamesLogo/doubt.png";
+import domino from "../../../assets/gamesLogo/domino.jpg";
+import chess from "../../../assets/gamesLogo/chess.jpg";
+import checkers from "../../../assets/gamesLogo/checkers.png";
 
 const gamesIcons = [
   { image: skrew, alt: "Skrew Game" },
@@ -26,8 +25,7 @@ export default function IntroSection() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      offset:400,
-      
+      offset: 300,
     });
   }, []);
   return (
