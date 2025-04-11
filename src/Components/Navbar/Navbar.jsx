@@ -56,12 +56,12 @@ export default function Navbar() {
                   {navigation.map((item) => (
                     <NavLink
                       key={item.name}
-                      to={'/'+item.to}
+                      to={"/" + item.to}
                       aria-current={item.current ? "page" : undefined}
                       className={classNames(
                         item.current
                           ? " myColor"
-                          : "navLinkItem text-gray-300 text-white ",
+                          : "navLinkItem navLinkFont text-gray-300 text-white ",
                         "rounded-md px-3 py-3 text-sm font-medium text-decoration-none  "
                       )}
                     >
@@ -72,40 +72,12 @@ export default function Navbar() {
               </div>
             </div>
             <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-              <Menu as="div" className="relative ml-3">
-                <div>
-                  <MenuButton className="relative flex rounded-full  text-sm">
-                    <span className="absolute -inset-1.5" />
-                    <span className="sr-only">Open user menu</span>
-                    <div className="lg:flex lg:flex-1 lg:justify-end ">
-                      <a href="#" className=" text-sm/6 font-semibold text-white text-decoration-none">
-                        Log in <span aria-hidden="true">&rarr;</span>
-                      </a>
-                    </div>
-                  </MenuButton>
-                </div>
-                <MenuItems
-                  transition
-                  className=" text-white absolute  right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-dark py-1 ring-1 shadow-lg ring-black/5 transition focus:outline-hidden data-closed:scale-95 data-closed:transform data-closed:opacity-0 data-enter:duration-100 data-enter:ease-out data-leave:duration-75 data-leave:ease-in"
-                >
-                  <MenuItem>
-                    <NavLink
-                      href="#"
-                      className="text-white text-decoration-none block px-4 py-2 text-sm hover:bg-gray-700 rounded"
-                    >
-                      Your Profile
-                    </NavLink>
-                  </MenuItem>
-                  <MenuItem>
-                    <NavLink
-                      href="#"
-                      className="text-white  text-decoration-none block px-4 py-2 text-sm hover:bg-gray-700 rounded"
-                    >
-                      Sign out
-                    </NavLink>
-                  </MenuItem>
-                </MenuItems>
-              </Menu>
+              <NavLink
+                to="/"
+                className="text-white navLinkFont  text-decoration-none block py-2 text-sm  rounded"
+              >
+                SignUp
+              </NavLink>
             </div>
           </div>
         </div>
@@ -116,7 +88,7 @@ export default function Navbar() {
               <Link
                 key={item.name}
                 as="a"
-                to={'/'+item.to}
+                to={"/" + item.to}
                 aria-current={item.current ? "page" : undefined}
                 className={classNames(
                   item.current

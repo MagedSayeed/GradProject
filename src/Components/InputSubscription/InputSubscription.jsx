@@ -7,7 +7,7 @@ import Button from "@mui/joy/Button";
 import { Mail } from "@mui/icons-material";
 import { Bounce, toast } from "react-toastify";
 
-export default function InputSubscription({buttonPlace}) {
+export default function InputSubscription({ buttonPlace }) {
   const [data, setData] = React.useState({
     email: "",
     status: "initial",
@@ -41,8 +41,7 @@ export default function InputSubscription({buttonPlace}) {
   };
 
   return (
-    
-    <form onSubmit={handleSubmit} id="demo" >
+    <form onSubmit={handleSubmit} id="demo">
       <FormControl>
         <FormLabel
           sx={(theme) => ({
@@ -54,11 +53,12 @@ export default function InputSubscription({buttonPlace}) {
             "--Input-decoratorChildHeight": "35px",
             backgroundColor: "#3a3c43",
             overflow: "hidden",
-            color: !buttonPlace?"#b8c0cc":"white",
+            color: !buttonPlace ? "#b8c0cc" : "white",
             border: "none",
-            maxWidth:'400px',
-            
-            borderBottom: !buttonPlace?"2px solid #8c99fe":"2px solid white",
+            maxWidth: "400px",
+            borderBottom: !buttonPlace
+              ? "2px solid #8c99fe"
+              : "2px solid white",
             borderRadius: "4px 4px 0 0",
             ":before": {
               boxShadow: "none !important",
@@ -74,37 +74,37 @@ export default function InputSubscription({buttonPlace}) {
           }
           error={data.status === "failure"}
           endDecorator={
-            !buttonPlace &&
-            <Button
-              variant="solid"
-              loading={data.status === "loading"}
-              type="submit"
-              sx={{
-                backgroundColor: "#b2bbff",
-                color: "#0d0f11",
-                borderRadius: "0px",
-                ":hover": {
-                  backgroundColor: "#e0e4fd",
-                  color: "#4d578c",
-                },
-              }}
-            >
-              Subscribe
-            </Button>
+            !buttonPlace && (
+              <Button
+                variant="solid"
+                loading={data.status === "loading"}
+                type="submit"
+                sx={{
+                  backgroundColor: "#b2bbff",
+                  color: "#0d0f11",
+                  borderRadius: "0px",
+                  ":hover": {
+                    backgroundColor: "#e0e4fd",
+                    color: "#4d578c",
+                  },
+                }}
+              >
+                Subscribe
+              </Button>
+            )
           }
-          
-          
         />
-        { buttonPlace && <Button
+        {buttonPlace && (
+          <Button
             variant="solid"
             loading={data.status === "loading"}
             type="submit"
             sx={{
               backgroundColor: "transparent",
-              border:"solid 1px white",
+              border: "solid 1px white",
               color: "white",
               borderRadius: "5px",
-              marginTop:"20px",
+              marginTop: "20px",
               ":hover": {
                 backgroundColor: "#e0e4fd",
                 color: "#4d578c",
@@ -112,7 +112,8 @@ export default function InputSubscription({buttonPlace}) {
             }}
           >
             Subscribe
-          </Button>}
+          </Button>
+        )}
       </FormControl>
     </form>
   );
