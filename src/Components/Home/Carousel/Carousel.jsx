@@ -17,10 +17,10 @@ export default function Carousel() {
     centerMode: true,
     infinite: false,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 8000,
     centerPadding: "50px",
     slidesToShow: 1,
-    speed: 500,
+    speed: 1000,
     arrows: false,
     responsive: [
       {

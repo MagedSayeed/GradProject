@@ -2,20 +2,16 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
 } from "@headlessui/react";
-import { Bars3Icon, BellIcon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
-import Home from "../Home/Home";
+import { Button } from "@mui/material";
+import SendIcon from "@mui/icons-material/Download";
 
 const navigation = [
   { name: "Games", to: "Games", current: false },
   { name: "How To Play", to: "HowToPlay", current: false },
-  { name: "Download", to: "Download", current: false },
   { name: "Support", to: "Support", current: false },
 ];
 
@@ -71,13 +67,19 @@ export default function Navbar() {
                 </div>
               </div>
             </div>
-            <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <div className="absolute inset-y-0 right-0 flex gap-3 items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
               <NavLink
-                to="/"
+                to="/signup"
                 className="text-white navLinkFont  text-decoration-none block py-2 text-sm  rounded"
               >
                 SignUp
               </NavLink>
+
+              <div className="hidden md:block">
+                <Button variant="contained" endIcon={<SendIcon />}>
+                  Download
+                </Button>
+              </div>
             </div>
           </div>
         </div>
