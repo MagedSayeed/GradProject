@@ -50,7 +50,7 @@ export default function Support() {
             <div className="SupportForm">
               <div className="mx-auto max-w-2xl text-center">
                 <h2 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl ">
-                Need to contact us?
+                  Need to contact us?
                 </h2>
               </div>
               <form onSubmit={handleSubmit} className="mx-auto mt-3 max-w-xl">

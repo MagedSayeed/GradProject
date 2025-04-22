@@ -5,8 +5,6 @@ import FormLabel from "@mui/material/FormLabel";
 import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
 import Typography from "@mui/material/Typography";
-import MuiCard from "@mui/material/Card";
-import { styled } from "@mui/material/styles";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
@@ -61,6 +59,7 @@ export default function SignUp(props) {
     event.preventDefault();
     setIsLoading(() => "loading");
     if (nameError || emailError || passwordError) {
+      setIsLoading("sent");
       return;
     }
     const data = new FormData(event.currentTarget);
@@ -160,7 +159,6 @@ export default function SignUp(props) {
             >
               Subscribe
             </Button>
-
           </Box>
         </div>
       </div>
