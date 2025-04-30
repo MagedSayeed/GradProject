@@ -42,7 +42,7 @@ export default function Support() {
     }
   };
   return (
-    <div className=" py-5">
+    <div className=" pb-5 myPadding supBg">
       <div className="container grayBg rounded-5 ">
         <div className="row ">
           <div className="col-md-5 SupportBg rounded-start-5"></div>

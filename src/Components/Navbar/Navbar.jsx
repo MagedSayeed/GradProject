@@ -23,7 +23,7 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className="position-sticky z-0 top-0 end-0 start-0 myNavBar z-3"
+      className="position-fixed z-0 top-0 end-0 start-0 myNavBar z-3"
     >
       <div className="container">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">

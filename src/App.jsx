@@ -7,6 +7,7 @@ import Toaster from "./Components/Toaster/Toaster";
 import Support from './Components/Support/Support';
 import Games from './Components/Games/Games';
 import SignUp from './Components/SignUp/SignUp';
+import SingleGamePage from './Components/GamesPages/SingleGamePage';
 
 const router = createBrowserRouter([
   {
@@ -19,6 +20,7 @@ const router = createBrowserRouter([
       {path: "support", element: <Support/> },
       {path: "games", element: <Games/> },
       {path: "signup", element: <SignUp/> },
+      {path: "SingleGamePage", element: <SingleGamePage/> },
       {path:'*',element:<Error/>},
     ],
   },

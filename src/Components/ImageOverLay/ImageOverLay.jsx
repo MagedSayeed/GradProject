@@ -6,8 +6,11 @@ export default function ImageOverLay({ overLayImage }) {
     <>
       <div className="imageOverLay position-absolute d-none d-md-block start-10 top-0 bottom-0">
         <div className=" d-flex flex-column  justify-content-center">
-          <img src={overLayImage} alt="" className="h-30 scaleUp" />
-          <h2 className="text-white mx-auto fst-italic">Available now!</h2>
+          <h1 className="scaleUp  anton-regular txtShadow text-white">
+            {overLayImage}
+          </h1>
+          {/* <img src={overLayImage} alt="" className="h-30 scaleUp" /> */}
+          <h2 className="text-white fs-5 fst-italic">Available now!</h2>
           <Button
             sx={{
               backgroundColor: "#b2bbff",
@@ -30,7 +33,7 @@ export default function ImageOverLay({ overLayImage }) {
               color: "white",
               border: "2px solid white",
               borderRadius: "5px",
-              marginBottom:"5px",
+              marginBottom: "5px",
               ":hover": {
                 borderColor: "#ffe461",
                 color: "#ffe461",

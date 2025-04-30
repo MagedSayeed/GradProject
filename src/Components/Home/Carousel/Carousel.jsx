@@ -7,7 +7,6 @@ import skrew1 from "../../../assets/images/Skrew2.jpg";
 import skrew2 from "../../../assets/images/Skrew3.jpg";
 import dominos1 from "../../../assets/images/dominos1.jpg";
 import ImageOverLay from "../../ImageOverLay/ImageOverLay";
-import img2 from "../../../assets/survey-wordmark.png";
 import { Padding } from "@mui/icons-material";
 import { maxHeight } from "@mui/system";
 export default function Carousel() {
@@ -33,12 +32,12 @@ export default function Carousel() {
   };
 
   const images = [
-    { image: skrew, alt: "Skrew Game", overLayImage: img2 },
-    { image: dominos1, alt: "Skrew Game", overLayImage: img2 },
-    { image: skrew2, alt: "Skrew Game", overLayImage: img2 },
-    { image: skrew, alt: "Skrew Game", overLayImage: img2 },
-    { image: dominos1, alt: "Skrew Game", overLayImage: img2 },
-    { image: skrew2, alt: "Skrew Game", overLayImage: img2 },
+    { image: skrew, alt: "Skrew" },
+    { image: dominos1, alt: "Dominos" },
+    { image: skrew2, alt: "Checkers" },
+    { image: skrew, alt: "Old Maid" },
+    { image: dominos1, alt: "Chess" },
+    { image: skrew2, alt: "I Doubt it" },
   ];
   return (
     <>
@@ -56,7 +55,7 @@ export default function Carousel() {
                     src={singleImages.image}
                     alt={singleImages.alt}
                   />
-                  <ImageOverLay overLayImage={singleImages.overLayImage} />
+                  <ImageOverLay overLayImage={singleImages.alt} />
                 </div>
               </div>
             );

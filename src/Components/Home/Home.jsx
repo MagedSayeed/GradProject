@@ -8,7 +8,7 @@ import Support from './../Support/Support';
 export default function Home() {
   return (
     <>
-      <div className="mainBg">
+      <div className="mainBg myPadding">
           <Carousel />
           <IntroSection/>
           <FAQ/>

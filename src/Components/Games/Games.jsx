@@ -4,8 +4,8 @@ import Input from "@mui/joy/Input";
 import { Search } from "@mui/icons-material";
 import Button from "@mui/joy/Button";
 
-import skrew from "./../../assets/gamesLogo/skrew.png";
-import oldmaid from "./../../assets/gamesLogo/oldmaid.png";
+import skrew from "./../../assets/gamesLogo/SkrewLogo.png";
+import oldmaid from "./../../assets/gamesLogo/oldmaidlogo.jpg";
 import doubt from "./../../assets/gamesLogo/doubt.png";
 import domino from "./../../assets/gamesLogo/domino.jpg";
 import chess from "./../../assets/gamesLogo/chess.jpg";
@@ -26,7 +26,7 @@ export default function Games() {
 
   return (
     <>
-      <div className="mainBg min-vh-100">
+      <div className="mainBg min-vh-100 myPadding">
         <div className="container">
           <div className="search d-flex  mb-5 pt-3">
             <Input

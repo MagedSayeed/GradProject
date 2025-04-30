@@ -31,9 +31,9 @@ export default function Footer() {
             <p className="text-sm text-gray-500">© Copyright 2025. All Rights Reserved.</p>
 
             <div className="flex  sm:mt-0 gap-3">
-                <p className="text-sm text-gray-500">Teams</p>
-                <p className="text-sm text-gray-500">Privacy</p>
-                <p className="text-sm text-gray-500">Cookies</p>
+                <p className="text-sm text-gray-500 cursor-pointer">Teams</p>
+                <p className="text-sm text-gray-500 cursor-pointer" >Privacy</p>
+                <p className="text-sm text-gray-500 cursor-pointer">Cookies</p>
             </div>
         </div>
         </div>

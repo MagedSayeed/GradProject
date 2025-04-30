@@ -22,7 +22,7 @@ export default function HowToPlay() {
   ];
   return (
     <>
-      <div className="mainBg">
+      <div className="mainBg myPadding">
         <div className="container">
           <div className="First_Section mb-4">
             <h1 className="py-3 fs-2 fw-bolder">How to Play GameZone Games</h1>
