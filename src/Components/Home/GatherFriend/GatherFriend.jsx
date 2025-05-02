@@ -19,7 +19,8 @@ export default function GatherFriend() {
           <div className="row align-items-center justify-content-center">
             <div className="col-md-4 mb-3">
               <div>
-                <h1 className="fw-bold">Gather Friends Near or Far</h1>
+                <h1 className="mb-0 fw-bold">Gather Friends</h1>
+                <h4 className="mb-4">Near or Far</h4>
                 <div className="">
                   <h3 className="fs-5 fw-bolder">
                     GameZone Games are for Pals
