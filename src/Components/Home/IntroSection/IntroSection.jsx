@@ -13,12 +13,12 @@ import chess from "../../../assets/gamesLogo/chess.jpg";
 import checkers from "../../../assets/gamesLogo/checkers.png";
 
 const gamesIcons = [
-  { image: skrew, alt: "Skrew Game" },
-  { image: oldmaid, alt: "oldmaid Game" },
-  { image: doubt, alt: "doubt Game" },
-  { image: domino, alt: "domino Game" },
-  { image: chess, alt: "chess Game" },
-  { image: checkers, alt: "checkers Game" },
+  { image: skrew, alt: "Skrew Game", gameLink: "/skrew" },
+  { image: oldmaid, alt: "Oldmaid Game", gameLink: "/oldmaid" },
+  { image: doubt, alt: "Idoubt Game", gameLink: "/idoubt" },
+  { image: domino, alt: "Domino Game", gameLink: "/domino" },
+  { image: chess, alt: "Chess Game", gameLink: "/chess" },
+  { image: checkers, alt: "Checkers Game", gameLink: "/checkers" },
 ];
 
 export default function IntroSection() {
@@ -63,6 +63,7 @@ export default function IntroSection() {
                   return (
                     <SingleGameIcon
                       key={id}
+                      gameLink={game.gameLink}
                       icon={game.image}
                       altern={game.alt}
                     />

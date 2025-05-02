@@ -15,11 +15,12 @@ export default function Carousel() {
     className: "center",
     centerMode: true,
     infinite: false,
+    accessibility:true,
     autoplay: true,
     autoplaySpeed: 8000,
     centerPadding: "50px",
     slidesToShow: 1,
-    speed: 1000,
+    speed: 500,
     arrows: false,
     responsive: [
       {

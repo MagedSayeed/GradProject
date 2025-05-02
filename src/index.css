@@ -21,7 +21,7 @@ body {
 .myLink {
   text-decoration: none;
 }
-.myPadding{
+.myPadding {
   padding-top: 60px;
 }
 .footer {
@@ -101,7 +101,7 @@ a {
   height: 16px;
   width: 16px;
 }
-.freeSz{
+.freeSz {
   font-size: 12px;
 }
 .imageOverLay .dwnBtn {
@@ -160,7 +160,7 @@ a {
   background-size: cover;
   background-image: url(./assets/games/Skrew3.png);
 }
-.supBg{
+.supBg {
   background-size: cover;
   background-image: url(./assets/games/cardBg.jpg);
 }
@@ -195,4 +195,43 @@ a {
   font-family: "Luckiest Guy", cursive;
   font-weight: 400;
   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+}
+.gameHint {
+  font-size: 13px;
+  line-height: 16px;
+  padding: 3px 12px;
+  align-items: center;
+  background-color: #e7eaee;
+  border-radius: 100px;
+  box-sizing: border-box;
+  color: #0d0f11;
+  display: inline-flex;
+  margin-right: 10px;
+  margin-top: 6px;
+  white-space: nowrap;
+  font-family: Inter;
+}
+.gameOverLayP {
+  line-height: 25px;
+  max-width: 400px;
+}
+.GamepageContent .below {
+  background-image: url(./assets/games/below1.jpg);
+}
+.gameDetails {
+  background-color: #35373e;
+  border-radius: 8px;
+  justify-content: space-between;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.gameDetails .detail {
+  border-bottom: 1px solid #64748b;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  color: #e7eaee;
+  font-family: Inter;
+  padding-top: 12px;
 }

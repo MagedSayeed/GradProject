@@ -13,12 +13,12 @@ import checkers from "./../../assets/gamesLogo/checkers.png";
 import SingleGameIcon from "./../Home/IntroSection/SingleGameIcon/SingleGameIcon";
 
 const gamesIcons = [
-  { image: skrew, alt: "Skrew Game" },
-  { image: oldmaid, alt: "Oldmaid Game" },
-  { image: doubt, alt: "Idoubt Game" },
-  { image: domino, alt: "Domino Game" },
-  { image: chess, alt: "Chess Game" },
-  { image: checkers, alt: "Checkers Game" },
+  { image: skrew, alt: "Skrew Game" ,gameLink:"/skrew"},
+  { image: oldmaid, alt: "Oldmaid Game",gameLink:"/oldmaid" },
+  { image: doubt, alt: "Idoubt Game",gameLink:"/idoubt" },
+  { image: domino, alt: "Domino Game",gameLink:"/domino" },
+  { image: chess, alt: "Chess Game",gameLink:"/chess" },
+  { image: checkers, alt: "Checkers Game",gameLink:"/checkers" },
 ];
 
 export default function Games() {
@@ -75,6 +75,7 @@ export default function Games() {
                   return (
                     <SingleGameIcon
                       key={id}
+                      gameLink={game.gameLink}
                       icon={game.image}
                       altern={game.alt}
                     />
