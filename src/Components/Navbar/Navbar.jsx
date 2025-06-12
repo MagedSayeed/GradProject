@@ -6,6 +6,7 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logo.png";
+import logo2 from "../../assets/logo2.png";
 import { Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Download";
 
@@ -29,7 +30,6 @@ export default function Navbar() {
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="relative flex h-16 items-center justify-between">
             <div className="absolute inset-y-0 left-0 flex items-center md:hidden">
-              {/* Mobile menu button*/}
               <DisclosureButton className="group relative inline-flex items-center justify-center rounded-md p-2">
                 <span className="absolute -inset-0.5" />
                 <span className="sr-only">Open main menu</span>
@@ -45,7 +45,7 @@ export default function Navbar() {
             </div>
             <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
               <Link className="flex shrink-0 items-center" to="/">
-                <img alt="GameZone" src={logo} className="h-12" />
+                <img alt="GameZone" src={logo2} className="h-8" />
               </Link>
               <div className="hidden md:ml-6 md:block">
                 <div className="flex">

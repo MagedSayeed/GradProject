@@ -1,16 +1,17 @@
 import { TextField } from "@mui/material";
 import logo from "../../assets/logo.png";
+import logo2 from "../../assets/logo2.png";
 import InputSubscription from "../InputSubscription/InputSubscription";
 import SocialIcons from "../SocialIcons/SocialIcons";
 
 export default function Footer() {
   return (
     <>
-      <div className="footer text-white">
+      <div className="footer text-white py-3">
         <div className="container">
           <div className="description-social row">
             <div className="col-md-9">
-              <img src={logo} className="myIcon" alt="GameZone logo" />
+              <img src={logo2} className="h-8" alt="GameZone logo" />
               <div className="details">
                 <h6 className="title">JOIN THE NEWSLETTER</h6>
                 <p className="content">

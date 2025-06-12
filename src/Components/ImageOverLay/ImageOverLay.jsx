@@ -1,7 +1,9 @@
 import { Gradient } from "@mui/icons-material";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import Button from "@mui/joy/Button";
-export default function ImageOverLay({ overLayImage }) {
+import { useNavigate } from "react-router-dom";
+export default function ImageOverLay({ overLayImage,gameName }) {
+  let nav = useNavigate();
   return (
     <>
       <div className="imageOverLay position-absolute d-none d-md-block start-10 top-0 bottom-0">
@@ -28,6 +30,9 @@ export default function ImageOverLay({ overLayImage }) {
             Download Now
           </Button>
           <Button
+            onClick={() => {
+              nav(gameName);
+            }}
             sx={{
               backgroundColor: "transparent",
               color: "white",

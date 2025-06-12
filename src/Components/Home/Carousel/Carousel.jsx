@@ -33,12 +33,12 @@ export default function Carousel() {
   };
 
   const images = [
-    { image: skrew, alt: "Skrew" },
-    { image: dominos1, alt: "Dominos" },
-    { image: skrew2, alt: "Checkers" },
-    { image: skrew, alt: "Old Maid" },
-    { image: dominos1, alt: "Chess" },
-    { image: skrew2, alt: "I Doubt it" },
+    { image: skrew, alt: "Skrew",game:'skrew' },
+    { image: dominos1, alt: "Dominos",game:'domino' },
+    { image: skrew2, alt: "Checkers",game:'checkers' },
+    { image: skrew, alt: "Old Maid",game:'oldmaid' },
+    { image: dominos1, alt: "Chess",game:'chess' },
+    { image: skrew2, alt: "I Doubt it",game:'idoubt' },
   ];
   return (
     <>
@@ -56,7 +56,7 @@ export default function Carousel() {
                     src={singleImages.image}
                     alt={singleImages.alt}
                   />
-                  <ImageOverLay overLayImage={singleImages.alt} />
+                  <ImageOverLay overLayImage={singleImages.alt} gameName={singleImages.game} />
                 </div>
               </div>
             );

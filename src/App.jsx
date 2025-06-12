@@ -46,12 +46,4 @@ export default function App() {
     </>
   );
 }
-/*
-// 1- Account management
-// 2- download and install 
-// 2- Feedback
-// 4- How to play
-// 5- Subscribe for new announcement
 
-
-*/
