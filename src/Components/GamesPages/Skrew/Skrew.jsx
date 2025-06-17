@@ -13,7 +13,7 @@ export default function Skrew() {
     name: "Skrew",
     type: "Trivia",
     playerCount: "4 Players",
-    time: "15 Min",
+    time: "15-20 Min",
     brief:
       "Skrew is a fast, fun, and unpredictable card game full of twists, bluffs, and laughs. Easy to learn, hard to master — get ready to play, trick, and get Skrewed!",
   };
@@ -27,7 +27,7 @@ export default function Skrew() {
     { q: "Release Date", a: "2025" },
     { q: "Game Type", a: "Trivia" },
     { q: "Player Count", a: "4 Players" },
-    { q: "Duration", a: "25 Minutes" },
+    { q: "Duration", a: "15-20 Minutes" },
     { q: "Languages", a: "American English (EN-US)" },
   ];
 

@@ -11,6 +11,7 @@ import doubt from "../../../assets/gamesLogo/doubt.png";
 import domino from "../../../assets/gamesLogo/domino.jpg";
 import chess from "../../../assets/gamesLogo/chess.jpg";
 import checkers from "../../../assets/gamesLogo/checkers.png";
+import uno from "../../../assets/gamesLogo/UNO.avif";
 
 const gamesIcons = [
   { image: skrew, alt: "Skrew Game", gameLink: "/skrew" },
@@ -19,13 +20,14 @@ const gamesIcons = [
   { image: domino, alt: "Domino Game", gameLink: "/domino" },
   { image: chess, alt: "Chess Game", gameLink: "/chess" },
   { image: checkers, alt: "Checkers Game", gameLink: "/checkers" },
+  { image: uno, alt: "UNO Game", gameLink: "/Uno" },
 ];
 
 export default function IntroSection() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
-      offset: 100,
+      offset: 300,
     });
   }, []);
   return (
@@ -58,7 +60,7 @@ export default function IntroSection() {
               </div>
             </div>
             <div className="allGamesIcons">
-              <div className="row gy-3">
+              <div className="row gy-3 justify-content-center">
                 {gamesIcons.map((game, id) => {
                   return (
                     <SingleGameIcon

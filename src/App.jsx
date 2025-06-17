@@ -14,6 +14,7 @@ import Checkers from "./Components/GamesPages/Checkers/Checkers";
 import Domino from "./Components/GamesPages/Domino/Domino";
 import Idoubt from "./Components/GamesPages/IDoubt/Idoubt";
 import Oldmaid from "./Components/GamesPages/Oldmaid/Oldmaid";
+import UNO from './Components/GamesPages/UNO/UNO';
 
 const router = createBrowserRouter([
   {
@@ -33,6 +34,7 @@ const router = createBrowserRouter([
       { path: "Domino", element: <Domino /> },
       { path: "Idoubt", element: <Idoubt /> },
       { path: "Oldmaid", element: <Oldmaid /> },
+      { path: "uno", element: <UNO /> },
       { path: "*", element: <Error /> },
     ],
   },
