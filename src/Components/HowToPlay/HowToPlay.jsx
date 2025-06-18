@@ -4,20 +4,28 @@ import Steps from "./Steps/Steps";
 export default function HowToPlay() {
   const steps = [
     {
-      title: "Creating a new account",
-      ans: "Each player must visit game website and SignUp",
-    },
-    {
       title: "Download & install",
       ans: "Click Download Button then install.",
     },
     {
-      title: `Launch the game,and hit "play" in the game`,
-      ans: "Once you hit play,the game will open a game menu screen. This screen is where each player select the game.",
+      title: "Access the Main Menu",
+      ans: "After launching the game, the user is directed to the Main Menu. This interface serves as the central hub where players can choose to create or join game rooms.",
     },
     {
-      title: `Each player directed to game lobby`,
-      ans: "Players can join the lobby room. Two options given(hosting,joining). Only one player will select host and creates a game room, Other players will join this room by entering room ID.",
+      title: `Create a Room (Become the Host)`,
+      ans: "By selecting the “Create Room” option, the user becomes the Host of a new game session. This allows them to control the game setup and invite others.",
+    },
+    {
+      title: `Share the Room Code with Friends`,
+      ans: "Once the room is created, the host receives a unique Room Code. They can share this code with other players, who will enter it to join the session as Clients.",
+    },
+    {
+      title: `Choose a Game`,
+      ans: "After all clients have joined, the host selects one of the available games from the list. This step finalizes the game settings before starting.",
+    },
+    {
+      title: `Start the Game`,
+      ans: "Once the game is chosen, the system transitions all players into the gameplay environment, and the match officially begins.",
     },
   ];
   return (

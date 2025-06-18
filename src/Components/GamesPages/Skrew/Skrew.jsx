@@ -30,6 +30,28 @@ export default function Skrew() {
     { q: "Duration", a: "15-20 Minutes" },
     { q: "Languages", a: "American English (EN-US)" },
   ];
+  const Rules = [
+    { rule: "Each player is dealt a hand of cards from a special deck." },
+    {
+      rule: "On your turn, you must either play valid cards according to the current round's rules or pass.",
+    },
+    {
+      rule: "Valid plays include discarding specific sets, loading cards onto other players, or triggering special effects.",
+    },
+    {
+      rule: "Players try to reduce their hand or shift high-point cards to opponents.",
+    },
+    {
+      rule: "A round ends when all players pass consecutively or a player empties their hand.",
+    },
+    {
+      rule: "At the end of the round, all players count the points in their hand.",
+    },
+    { rule: "The player with the lowest total points wins the round." },
+    {
+      rule: "The game continues for multiple rounds until a player reaches a winning condition, such as the lowest total score after a set number of rounds.",
+    },
+  ];
   useEffect(() => {
     scrollTo({ top: 0, behavior: "smooth" });
   });
@@ -41,6 +63,7 @@ export default function Skrew() {
         album={album}
         paragraphs={paragraphs}
         QA={QA}
+        Rules={Rules}
       />
     </>
   );

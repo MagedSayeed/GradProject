@@ -32,6 +32,12 @@ export default function Checkers() {
     { q: "Duration", a: "10-20 Minutes" },
     { q: "Languages", a: "American English (EN-US)" },
   ];
+  const Rules = [
+    { rule:"Players move pieces diagonally on dark squares."},
+    { rule:"Regular pieces move forward one space; capturing is done by jumping over opponent pieces."},
+    { rule:"Reaching the far end promotes a piece to “King,” allowing it to move backward."},
+    { rule:"The game ends when one player has no remaining legal moves."},
+  ];
 
   return (
     <>
@@ -40,6 +46,7 @@ export default function Checkers() {
         album={album}
         paragraphs={paragraphs}
         QA={QA}
+        Rules={Rules}
       />
     </>
   );

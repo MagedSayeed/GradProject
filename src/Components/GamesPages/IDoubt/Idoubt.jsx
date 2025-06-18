@@ -31,6 +31,12 @@ export default function Idoubt() {
     { q: "Duration", a: "25 Minutes" },
     { q: "Languages", a: "American English (EN-US)" },
   ];
+  const Rules = [
+    { rule:"Players take turns placing cards face down while announcing a rank (e.g., “two 5s”)."},
+    { rule:"Other players may call I Doubt It if they suspect a bluff."},
+    { rule:"If the challenge is correct, the bluffer picks up the entire pile; if incorrect, the challenger picks up the pile."},
+    { rule:"First player to discard all cards wins."},
+  ];
 
   return (
     <>
@@ -39,6 +45,7 @@ export default function Idoubt() {
         album={album}
         paragraphs={paragraphs}
         QA={QA}
+        Rules={Rules}
       />
     </>
   );

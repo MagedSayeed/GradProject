@@ -35,7 +35,7 @@ export default function Carousel() {
   const images = [
     { image: skrew, alt: "Skrew",game:'skrew' },
     { image: dominos1, alt: "Dominos",game:'domino' },
-    { image: skrew2, alt: "Checkers",game:'checkers' },
+    { image: skrew1, alt: "Checkers",game:'checkers' },
     { image: skrew, alt: "Old Maid",game:'oldmaid' },
     { image: dominos1, alt: "Chess",game:'chess' },
     { image: skrew2, alt: "I Doubt it",game:'idoubt' },
@@ -52,7 +52,7 @@ export default function Carousel() {
               >
                 <div className=" imageCover position-relative">
                   <img
-                    className="temp rounded-4 w-100 h-100"
+                    className="temp rounded-4 w-100 h-100 max-h-80  md:max-h-125 "
                     src={singleImages.image}
                     alt={singleImages.alt}
                   />

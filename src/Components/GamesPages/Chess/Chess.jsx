@@ -32,6 +32,12 @@ export default function Chess() {
     { q: "Duration", a: "15-30 Minutes" },
     { q: "Languages", a: "American English (EN-US)" },
   ];
+  const Rules = [
+    { rule:"Each player controls 16 pieces with unique moves: King, Queen, Rooks, Bishops, Knights, and Pawns."},
+    { rule:"Players alternate turns moving one piece."},
+    { rule:"The goal is to place the opponent's king under attack with no legal escape (checkmate)."},
+    { rule:"The game can also end in draw/stalemate under certain conditions."},
+  ];
 
   return (
     <>
@@ -40,6 +46,7 @@ export default function Chess() {
         album={album}
         paragraphs={paragraphs}
         QA={QA}
+        Rules={Rules}
       />
     </>
   );

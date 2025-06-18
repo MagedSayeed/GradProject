@@ -6,6 +6,9 @@ import FAQ from './FAQ/FAQ';
 import Support from './../Support/Support';
 
 export default function Home() {
+  useEffect(() => {
+      scrollTo({ top: 0, behavior: "smooth" });
+    });
   return (
     <>
       <div className="mainBg myPadding">

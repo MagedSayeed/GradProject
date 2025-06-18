@@ -4,8 +4,9 @@ import GroupIcon from "@mui/icons-material/Group";
 import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";
 import HeaderTitle from "./../HeaderTitle/HeaderTitle";
 import GameSlider from "./GameSlider/GameSlider";
+import Steps from "./../HowToPlay/Steps/Steps";
 
-export default function SingleGamePage({ game, album, paragraphs, QA }) {
+export default function SingleGamePage({ game, album, paragraphs, QA, Rules }) {
 
   return (
     <>
@@ -54,6 +55,14 @@ export default function SingleGamePage({ game, album, paragraphs, QA }) {
               {/* all slider images */}
               <GameSlider album={album} />
             </div>
+
+            <HeaderTitle title="Rules & Instructions" />
+            <div className="container">
+              {Rules.map((Rule, idx) => (
+                <Steps key={idx} num={idx} title={Rule.rule} ans="" />
+              ))}
+            </div>
+
             <HeaderTitle title="About the Game" />
             <div className="row container">
               <div className="col-md-6">

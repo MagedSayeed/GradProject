@@ -34,9 +34,7 @@ body {
 .newIconColor {
   color: #b2bbff;
 }
-.temp {
-  min-height: 500px;
-}
+
 .navLinkFont {
   font-size: 16px;
   font-weight: 600;
@@ -77,6 +75,9 @@ a {
 }
 .slick-slide img {
   max-height: 500px;
+}
+.temp {
+  min-height: 500px;
 }
 .slick-slide div {
   height: 100% !important ;

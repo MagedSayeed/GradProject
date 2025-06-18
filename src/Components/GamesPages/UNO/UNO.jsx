@@ -33,6 +33,14 @@ export default function UNO() {
     { q: "Duration", a: "15-30 Minutes" },
     { q: "Languages", a: "American English (EN-US)" },
   ];
+  const Rules = [
+    { rule:"Each player is dealt 7 cards."},
+    { rule:"Match the top card in the discard pile by color or number."},
+    { rule:"Special cards include Skip, Reverse, Draw Two, Wild, and Wild Draw Four."},
+    { rule:"Say UNO when playing your second-to-last card."},
+    { rule:"First to discard all cards wins the round."},
+    { rule:"Points are awarded based on opponents remaining cards."},
+  ];
 
   return (
     <>
@@ -41,6 +49,7 @@ export default function UNO() {
         album={album}
         paragraphs={paragraphs}
         QA={QA}
+        Rules={Rules}
       />
     </>
   );

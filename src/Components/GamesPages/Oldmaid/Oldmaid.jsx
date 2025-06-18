@@ -31,6 +31,13 @@ export default function Oldmaid() {
     { q: "Duration", a: "15-20 Minutes" },
     { q: "Languages", a: "American English (EN-US)" },
   ];
+  const Rules = [
+    { rule:"Remove one Queen from the deck (creating an unmatchable card)."},
+    { rule:"Players are dealt cards and remove pairs from their hands."},
+    { rule:"Players take turns drawing a card from the next player’s hand, aiming to make more pairs."},
+    { rule:"The game continues until all pairs are matched."},
+    { rule:"The player left holding the unmatchable “Old Maid” loses."},
+  ];
 
   return (
     <>
@@ -39,6 +46,7 @@ export default function Oldmaid() {
         album={album}
         paragraphs={paragraphs}
         QA={QA}
+        Rules={Rules}
       />
     </>
   );

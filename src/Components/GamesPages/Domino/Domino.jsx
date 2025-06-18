@@ -34,6 +34,13 @@ export default function Domino() {
     { q: "Duration", a: "10 Minutes" },
     { q: "Languages", a: "American English (EN-US)" },
   ];
+  const Rules = [
+    { rule:"Players take turns placing matching dominoes end-to-end."},
+    { rule:"Tiles must match in number at connecting ends."},
+    { rule:"If a player cannot play, they draw from the boneyard (remaining tiles)."},
+    { rule:"Game ends when a player runs out of tiles or no more moves can be made."},
+    { rule:"Score may be counted based on remaining tiles in opponents' hands."},
+  ];
 
   return (
     <>
@@ -42,6 +49,7 @@ export default function Domino() {
         album={album}
         paragraphs={paragraphs}
         QA={QA}
+        Rules={Rules}
       />
     </>
   );
