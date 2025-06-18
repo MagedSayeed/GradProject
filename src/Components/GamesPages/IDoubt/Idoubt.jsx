@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import BG from "./../../../assets/games/idoubt.jpg";
 
 import img1 from "./../../../assets/games/idoubt/1.jpg";
@@ -7,6 +7,9 @@ import img2 from "./../../../assets/games/idoubt/2.jpg";
 import SingleGamePage from "./../SingleGamePage";
 
 export default function Idoubt() {
+  useEffect(() => {
+      scrollTo({ top: 0, behavior: "smooth" });
+    });
   const game = {
     BG,
     name: "I Doubt It",

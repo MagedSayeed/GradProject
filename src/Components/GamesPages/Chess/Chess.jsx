@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import BG from "./../../../assets/games/chess.jpg";
 
 import img1 from "./../../../assets/games/chess/1.jpg";
@@ -8,6 +8,9 @@ import img3 from "./../../../assets/games/chess/3.jpg";
 import SingleGamePage from "./../SingleGamePage";
 
 export default function Chess() {
+  useEffect(() => {
+      scrollTo({ top: 0, behavior: "smooth" });
+    });
   const game = {
     BG,
     name: "Chess",

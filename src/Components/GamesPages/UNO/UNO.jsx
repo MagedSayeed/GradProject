@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import BG from "./../../../assets/games/UNObg.webp";
 
 import img1 from "./../../../assets/games/skrew/1.jpg";
@@ -7,6 +8,9 @@ import img3 from "./../../../assets/games/skrew/3.jpg";
 import SingleGamePage from "./../SingleGamePage";
 
 export default function UNO() {
+  useEffect(() => {
+      scrollTo({ top: 0, behavior: "smooth" });
+    });
   const game = {
     BG,
     name: "UNO",

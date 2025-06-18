@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import BG from "./../../../assets/games/oldmaid.jpg";
 
 import img1 from "./../../../assets/games/oldmaid/1.jpg";
@@ -8,6 +8,9 @@ import img3 from "./../../../assets/games/oldmaid/3.jpg";
 import SingleGamePage from "./../SingleGamePage";
 
 export default function Oldmaid() {
+  useEffect(() => {
+      scrollTo({ top: 0, behavior: "smooth" });
+    });
   const game = {
     BG,
     name: "Old Maid",

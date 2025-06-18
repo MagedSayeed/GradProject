@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 
 export default function GameSlider({ album }) {
@@ -24,7 +23,7 @@ export default function GameSlider({ album }) {
       {album.map((im, id) => {
         return (
           <div key={id} className="pe-1 pe-md-3 outline-none  bg-transparent ">
-            <img src={im} alt="21" />
+            <img src={im} alt="" className=""  />
           </div>
         );
       })}

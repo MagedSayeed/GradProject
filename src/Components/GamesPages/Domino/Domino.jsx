@@ -1,4 +1,4 @@
-import React from "react";
+import { useEffect } from "react";
 import BG from "./../../../assets/games/domino.jpg";
 
 import img1 from "./../../../assets/games/domino/1.jpg";
@@ -10,6 +10,9 @@ import img5 from "./../../../assets/games/domino/5.jpg";
 import SingleGamePage from "./../SingleGamePage";
 
 export default function Domino() {
+  useEffect(() => {
+      scrollTo({ top: 0, behavior: "smooth" });
+    });
   const game = {
     BG,
     name: "Domino",

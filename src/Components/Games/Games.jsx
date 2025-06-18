@@ -1,5 +1,4 @@
 import * as React from "react";
-import TextField from "@mui/material/TextField";
 import Input from "@mui/joy/Input";
 import { Search } from "@mui/icons-material";
 import Button from "@mui/joy/Button";
@@ -11,17 +10,20 @@ import domino from "./../../assets/gamesLogo/domino.jpg";
 import chess from "./../../assets/gamesLogo/chess.jpg";
 import checkers from "./../../assets/gamesLogo/checkers.png";
 import SingleGameIcon from "./../Home/IntroSection/SingleGameIcon/SingleGameIcon";
+import uno from "./../../assets/gamesLogo/UNO.avif";
 
 const gamesIcons = [
-  { image: skrew, alt: "Skrew Game" ,gameLink:"/skrew"},
-  { image: oldmaid, alt: "Oldmaid Game",gameLink:"/oldmaid" },
-  { image: doubt, alt: "Idoubt Game",gameLink:"/idoubt" },
-  { image: domino, alt: "Domino Game",gameLink:"/domino" },
-  { image: chess, alt: "Chess Game",gameLink:"/chess" },
-  { image: checkers, alt: "Checkers Game",gameLink:"/checkers" },
+  { image: skrew, alt: "Skrew Game", gameLink: "/skrew" },
+  { image: domino, alt: "Domino Game", gameLink: "/domino" },
+  { image: doubt, alt: "Idoubt Game", gameLink: "/idoubt" },
+  { image: chess, alt: "Chess Game", gameLink: "/chess" },
+  { image: oldmaid, alt: "Oldmaid Game", gameLink: "/oldmaid" },
+  { image: uno, alt: "UNO Game", gameLink: "/Uno" },
+  { image: checkers, alt: "Checkers Game", gameLink: "/checkers" },
 ];
 
 export default function Games() {
+  
   const [data, setData] = React.useState("");
 
   return (
