@@ -73,12 +73,15 @@ a {
   background-color: transparent;
   border: none;
 }
-.slick-slide img {
+/* .slick-slide img {
   max-height: 500px;
-}
-.temp {
+} */
+/* .temp {
   min-height: 500px;
-}
+} */
+ .testt{
+  height:100vh ;
+ }
 .slick-slide div {
   height: 100% !important ;
   display: block;

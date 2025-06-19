@@ -52,7 +52,7 @@ export default function Carousel() {
               >
                 <div className=" imageCover position-relative">
                   <img
-                    className="temp rounded-4 w-100 h-100 max-h-80  md:max-h-125 "
+                    className="temp rounded-4 w-100 h-100 min-h-80  xl:max-h-125 max-h-110"
                     src={singleImages.image}
                     alt={singleImages.alt}
                   />
