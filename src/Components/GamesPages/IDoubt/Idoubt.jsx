@@ -1,8 +1,8 @@
 import { useEffect } from "react";
 import BG from "./../../../assets/games/idoubt.jpg";
 
-import img1 from "./../../../assets/games/idoubt/1.jpg";
-import img2 from "./../../../assets/games/idoubt/2.jpg";
+import img1 from "./../../../assets/games/idoubt/Idoubt.png";
+
 
 import SingleGamePage from "./../SingleGamePage";
 
@@ -19,7 +19,7 @@ export default function Idoubt() {
     brief:
       "I Doubt It is a multiplayer bluffing card game. Players take turns placing cards face down while declaring their rank, and others can challenge the truthfulness by saying I doubt it. The goal is to get rid of all your cards by outsmarting or deceiving opponents.",
   };
-  const album = [img1, img2, img2, img1, img1];
+  const album = [img1, img1, img1, img1, img1];
   const paragraphs = [
     "I Doubt It, also commonly known as BS, is a popular bluffing card game played with a standard deck of cards. It is best enjoyed in a group and thrives on deception, quick thinking, and the ability to read other players. The game's simple rules and unpredictable outcomes make it a favorite at parties and casual gatherings.",
     "The objective of I Doubt It is to be the first player to discard all of your cards by placing them face down and declaring their rank — truthfully or not. Other players can challenge the move by calling out “I doubt it.” If the challenge reveals a lie, the bluffer picks up the pile; if not, the challenger does. The fun lies in the constant mind games and bold bluffs that define each round.",

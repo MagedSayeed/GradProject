@@ -1,17 +1,13 @@
 import * as React from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import FormLabel from "@mui/material/FormLabel";
 import FormControl from "@mui/material/FormControl";
 import TextField from "@mui/material/TextField";
-import Typography from "@mui/material/Typography";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
-import { IconButton, Input, InputAdornment } from "@mui/material";
-import InputLabel from "@mui/material/InputLabel";
+import { IconButton,  InputAdornment } from "@mui/material";
 import Visibility from "@mui/icons-material/Visibility";
 import VisibilityOff from "@mui/icons-material/VisibilityOff";
-import OutlinedInput from "@mui/material/OutlinedInput";
 
 export default function SignUpForm(props) {
   const [emailError, setEmailError] = React.useState(false);

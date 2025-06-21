@@ -1,9 +1,7 @@
 import { useEffect } from "react";
 import BG from "./../../../assets/games/UNObg.webp";
 
-import img1 from "./../../../assets/games/skrew/1.jpg";
-import img2 from "./../../../assets/games/skrew/2.jpg";
-import img3 from "./../../../assets/games/skrew/3.jpg";
+import img1 from "./../../../assets/games/oldmaid/oldmaid.png";
 
 import SingleGamePage from "./../SingleGamePage";
 
@@ -20,7 +18,7 @@ export default function UNO() {
     brief:
       "UNO is a fast-paced card game where players match colors or numbers to get rid of their cards. The game includes special cards like Skip, Reverse, and Wild that add fun twists. The first player to play all their cards wins, but don't forget to shout “UNO” when you're down to one card!",
   };
-  const album = [img1, img2, img3, img1, img1];
+  const album = [img1, img1, img1, img1, img1];
   const paragraphs = [
     "UNO is a fun card game where players match cards by color or number. The goal is to get rid of all your cards first.",
     "Special cards like Skip, Reverse, and Wild add twists to the game. They can change the direction or make others draw cards.",

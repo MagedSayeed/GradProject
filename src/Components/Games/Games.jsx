@@ -9,8 +9,8 @@ import doubt from "./../../assets/gamesLogo/doubt.png";
 import domino from "./../../assets/gamesLogo/domino.jpg";
 import chess from "./../../assets/gamesLogo/chess.jpg";
 import checkers from "./../../assets/gamesLogo/checkers.png";
-import SingleGameIcon from "./../Home/IntroSection/SingleGameIcon/SingleGameIcon";
 import uno from "./../../assets/gamesLogo/UNO.avif";
+import SingleGameIcon from "./../Home/IntroSection/SingleGameIcon/SingleGameIcon";
 
 const gamesIcons = [
   { image: skrew, alt: "Skrew Game", gameLink: "/skrew" },

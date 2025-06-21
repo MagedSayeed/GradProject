@@ -1,9 +1,9 @@
 import { useEffect } from "react";
 import BG from "./../../../assets/games/Skrew.png";
 
-import img1 from "./../../../assets/games/skrew/1.jpg";
-import img2 from "./../../../assets/games/skrew/2.jpg";
-import img3 from "./../../../assets/games/skrew/3.jpg";
+import img1 from "./../../../assets/games/skrew/skrew.png";
+import img2 from "./../../../assets/games/skrew/skrew1.png";
+import img3 from "./../../../assets/games/skrew/gameworld.png";
 
 import SingleGamePage from "./../SingleGamePage";
 
@@ -17,7 +17,7 @@ export default function Skrew() {
     brief:
       "Skrew is a fast, fun, and unpredictable card game full of twists, bluffs, and laughs. Easy to learn, hard to master — get ready to play, trick, and get Skrewed!",
   };
-  const album = [img1, img2, img3, img1, img1];
+  const album = [img1, img2, img3, img1, img2];
   const paragraphs = [
     "Skrew is a fast-paced card game packed with excitement, strategy, and unexpected twists. Designed for quick play and big laughs, it’s the perfect choice for game nights, gatherings, or even quick breaks with friends. The rules are simple to pick up, making it accessible to both casual players and competitive gamers alike.",
     "What sets Skrew apart is its clever mix of bluffing, planning, and unpredictable turns. Every card you play can change the direction of the game, and just when you think you're winning — you might get Skrewed! Whether you're playing defensively or going all-in with bold moves, every round keeps you on edge.",

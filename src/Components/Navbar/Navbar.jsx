@@ -5,7 +5,6 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Link, NavLink } from "react-router-dom";
-import logo from "../../assets/logo.png";
 import logo2 from "../../assets/logo2.png";
 import { Button } from "@mui/material";
 import SendIcon from "@mui/icons-material/Download";
@@ -45,7 +44,14 @@ export default function Navbar() {
             </div>
             <div className="flex flex-1 items-center justify-center md:items-stretch md:justify-start">
               <Link className="flex shrink-0 items-center" to="/">
-                <img alt="GameZone" src={logo2} className="h-8" />
+                <img
+                  alt="GameZone"
+                  src={logo2}
+                  className="h-8"
+                  onClick={() => {
+                    scrollTo({ top: 0, behavior: "smooth" });
+                  }}
+                />
               </Link>
               <div className="hidden md:ml-6 md:block">
                 <div className="flex">
@@ -76,7 +82,13 @@ export default function Navbar() {
               </NavLink>
 
               <div className="hidden md:block">
-                <Button variant="contained" endIcon={<SendIcon />}>
+                <Button
+                  component="a"
+                  href="https://github.com/mido8077/GameZone_Gradproject"
+                  target="_blank"
+                  variant="contained"
+                  endIcon={<SendIcon />}
+                >
                   Download
                 </Button>
               </div>

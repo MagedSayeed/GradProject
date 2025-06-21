@@ -1,14 +1,13 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import skrew from "../../../assets/images/Skrew1.jpg";
-import skrew1 from "../../../assets/images/Skrew2.jpg";
-import skrew2 from "../../../assets/images/Skrew3.jpg";
-import dominos1 from "../../../assets/images/dominos1.jpg";
+import gameworld from "../../../assets/games/skrew/gameworld.png";
+import skrew from "../../../assets/games/skrew/skrew1.png";
+import dominos from "../../../assets/games/domino/Dominos3.png";
+import idoubt from "../../../assets/games/idoubt/Idoubt.png";
+import GameMenu from "../../../assets/games/GameMenu.jpg";
 import ImageOverLay from "../../ImageOverLay/ImageOverLay";
-import { Padding } from "@mui/icons-material";
-import { maxHeight } from "@mui/system";
+
 export default function Carousel() {
   const settings = {
     dots: true,
@@ -17,7 +16,7 @@ export default function Carousel() {
     infinite: false,
     accessibility:true,
     autoplay: true,
-    autoplaySpeed: 8000,
+    autoplaySpeed: 10000,
     centerPadding: "50px",
     slidesToShow: 1,
     speed: 500,
@@ -33,12 +32,11 @@ export default function Carousel() {
   };
 
   const images = [
+    { image: gameworld, alt: "GAMEZONE",game:'howtoplay' },
+    { image: GameMenu, alt: "Game Menu",game:'games' },
     { image: skrew, alt: "Skrew",game:'skrew' },
-    { image: dominos1, alt: "Dominos",game:'domino' },
-    { image: skrew1, alt: "Checkers",game:'checkers' },
-    { image: skrew, alt: "Old Maid",game:'oldmaid' },
-    { image: dominos1, alt: "Chess",game:'chess' },
-    { image: skrew2, alt: "I Doubt it",game:'idoubt' },
+    { image: dominos, alt: "Domino",game:'domino' },
+    { image: idoubt, alt: "I Doubt",game:'idoubt' },
   ];
   return (
     <>

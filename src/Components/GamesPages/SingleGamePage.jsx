@@ -1,4 +1,3 @@
-import checkers from "../../assets/games/Skrew.png";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import GroupIcon from "@mui/icons-material/Group";
 import EmojiObjectsIcon from "@mui/icons-material/EmojiObjects";

@@ -1,4 +1,3 @@
-import { Gradient } from "@mui/icons-material";
 import SocialIcons from "../SocialIcons/SocialIcons";
 import Button from "@mui/joy/Button";
 import { useNavigate } from "react-router-dom";
@@ -14,6 +13,9 @@ export default function ImageOverLay({ overLayImage,gameName }) {
           {/* <img src={overLayImage} alt="" className="h-30 scaleUp" /> */}
           <h2 className="text-white fs-5 fst-italic">Available now!</h2>
           <Button
+          component="a"
+          href="https://github.com/mido8077/GameZone_Gradproject"
+          target="_blank"
             sx={{
               backgroundColor: "#b2bbff",
               color: "#0d0f11",

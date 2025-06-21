@@ -3,7 +3,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import XIcon from '@mui/icons-material/X';
 import GitHubIcon from '@mui/icons-material/GitHub';
-// import { Link } from 'react-router-dom';
 
 export default function SocialIcons({myColor}) {
   let cls=myColor+" cursor-pointer";

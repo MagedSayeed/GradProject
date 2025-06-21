@@ -53,7 +53,7 @@ export default function QuestionAnswer() {
             <Typography component="span">What is GameZone?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>GameZone is a multi-mini-game experience packed into one exciting platform, offering 6 different games that test your reflexes, memory, logic, and creativity.</Typography>
+            <Typography>GameZone is a multi-mini-game experience packed into one exciting platform, offering 7 different games that test your reflexes, memory, logic, and creativity.</Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -64,7 +64,7 @@ export default function QuestionAnswer() {
             <Typography component="span">How many mini games are included in GameZone?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>GameZone includes a total of 6 unique and challenging mini games.</Typography>
+            <Typography>GameZone includes a total of 7 unique and challenging mini games.</Typography>
           </AccordionDetails>
         </Accordion>
         <Accordion
@@ -75,7 +75,7 @@ export default function QuestionAnswer() {
             <Typography component="span">Is GameZone a single-player or multiplayer game?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>GameZone can be played in both single-player mode to beat your own scores and multiplayer mode to compete with friends.</Typography>
+            <Typography>GameZone can be played multiplayer with friends.</Typography>
           </AccordionDetails>
         </Accordion>
       </div>
@@ -110,7 +110,7 @@ export default function QuestionAnswer() {
             <Typography component="span">What platforms is GameZone available on?</Typography>
           </AccordionSummary>
           <AccordionDetails>
-            <Typography>GameZone is available on PC. Just search for "GameZone" in your app store to get started!</Typography>
+            <Typography>GameZone is available on PC. Just search for "GameZone" in the website to get started!</Typography>
           </AccordionDetails>
         </Accordion>
       </div>

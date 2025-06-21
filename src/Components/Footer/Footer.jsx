@@ -1,5 +1,3 @@
-import { TextField } from "@mui/material";
-import logo from "../../assets/logo.png";
 import logo2 from "../../assets/logo2.png";
 import InputSubscription from "../InputSubscription/InputSubscription";
 import SocialIcons from "../SocialIcons/SocialIcons";

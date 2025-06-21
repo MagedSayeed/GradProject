@@ -1,6 +1,4 @@
-import { Link } from "react-router-dom";
 import avater1 from "../../../assets/IntroSection.png";
-// import skrew from "../../../assets/images/Skrew1.jpg";
 import SingleGameIcon from "./SingleGameIcon/SingleGameIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -50,7 +48,7 @@ export default function IntroSection() {
               <p className="fw-bold fs-1">What's Gamezone Games?</p>
               <div className="content">
                 <p>
-                  GameZone has six exciting mini-games, each with unique
+                  GameZone has seven exciting mini-games, each with unique
                   challenges. Enjoy fast-paced action, tricky puzzles, and
                   reflex-based fun.
                 </p>
